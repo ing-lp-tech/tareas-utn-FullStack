@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ececec;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.head {
+  background-color: rgb(187, 70, 49);
+  padding: 20px;
+  top: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.body-button {
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  align-items: center;
+}
+
+#container {
+  width: 100%; /* min(100%, 1000px); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 2.5%;
+  text-align: center;
+}
+
+.card {
+  width: 35vh;
+  margin-top: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.973);
+  /* overflow: hidden; */
+}
+
+.card:hover {
+  width: 35vh;
+  margin-top: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 6px 0px rgba(255, 60, 0, 0.973);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.boton {
+  height: min-content;
+  font-size: 25px;
+  border-radius: 4px;
+  background-color: rgb(187, 70, 49);
+  color: white;
+}
+
+/* mobiles (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
+  #container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 2.5%;
+    text-align: center;
+  }
+  .card {
+    background-color: white;
+    width: 40%;
+    box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.973);
+    overflow: hidden;
+  }
+
+  .card h1,
+  h2 {
+    font-size: 15px;
+  }
+  .card:hover {
+    background-color: white;
+    width: 40%;
+    box-shadow: 7px 7px 6px 0px rgba(255, 60, 0, 0.973);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 80%;
+  }
+}
