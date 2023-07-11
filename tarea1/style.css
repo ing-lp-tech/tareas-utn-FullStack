@@ -36,7 +36,7 @@ body {
 
 .card {
   width: 35vh;
-  margin-top: 10px;
+  margin: 10px 20px;
   background-color: white;
   padding: 20px;
   border-radius: 20px;
@@ -46,7 +46,7 @@ body {
 
 .card:hover {
   width: 35vh;
-  margin-top: 10px;
+  margin: 10px 20px;
   background-color: white;
   padding: 20px;
   border-radius: 20px;

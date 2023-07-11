@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 14px 0 24px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
+}
+
+header .brand-navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primer-box {
+  display: flex;
+  align-items: center;
+}
+
+/* div colors */
+.colors {
+  margin: 0 14px 0 0;
+}
+.colors img {
+  height: 18px;
+}
+
+/* div box-icon */
+
+.box-icon {
+  display: flex;
+  height: 30px;
+}
+.box-icon img {
+  min-width: 30px;
+}
+
+.spam-icon {
+  font-size: 12px;
+  line-height: 1.3;
+  display: inline-block;
+  max-height: 32px;
+  overflow: hidden;
+  max-width: 370px;
+}
+.spam-negrita {
+  font-weight: 600;
+  color: black;
+  margin-right: 5px;
+}
+.spam-clarito {
+  color: #636369;
+}
+.spam-blue {
+  color: #0066ff;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.nav-principal {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-principal nav a {
+  font-size: 15px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 500;
+}
+.TJG {
+  padding: 0 10px;
+  font-size: 15px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 525;
+}
+
+.go-pro {
+  padding: 0 10px;
+  font-size: 15px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 520;
+  color: #ff0096;
+}
+
+.divider {
+  height: 60%;
+  width: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, 0.075);
+}
+
+.buttons-navbar {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sing-up {
+  background-color: #005ce6;
+  height: 36px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px white none;
+  color: white;
+  padding: 10px;
+  font-weight: 550;
+}
+.sing-in {
+  background-color: #ffffff;
+  height: 36px;
+  padding: 0 10px;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-weight: 525;
+}
+
+/* 
+nav {
+  height: 100%;
+
+  align-items: center;
+  gap: 30px;
+}
+
+header .buttons-navbar {
+  height: 100%;
+
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header .buttons-navbar button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+} */
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
