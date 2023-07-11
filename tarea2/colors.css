@@ -132,39 +132,6 @@ header .brand-navbar {
   font-weight: 525;
 }
 
-/* 
-nav {
-  height: 100%;
-
-  align-items: center;
-  gap: 30px;
-}
-
-header .buttons-navbar {
-  height: 100%;
-
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-header .buttons-navbar button {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  font-size: 18px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-} */
-
 nav a {
   text-decoration: none;
   color: black;
