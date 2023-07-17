@@ -1,0 +1,236 @@
+@import url("http://www.w3.org/2000/svg");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hamburguerContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 31px 33px 31px 0;
+}
+
+.header {
+  display: none;
+}
+
+.header .buttonsContainer {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 40%;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.header .loginContainer {
+  width: 120px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 1px solid #bdbdbd;
+  box-shadow: 4px -4px 24px 0px rgba(94, 71, 71, 0.25);
+  color: black;
+}
+.header .registerContainer {
+  width: 120px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #ffc727;
+  box-shadow: 4px -4px 24px 0px rgba(94, 71, 71, 0.25);
+  color: white;
+  border: none;
+}
+.principalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 49px;
+}
+.boxPrincipalContainer {
+  width: 22vw;
+}
+.girlContainer {
+  display: none;
+}
+
+.box-titlePrincipalContainer {
+  margin-bottom: 15px;
+}
+.box-titlePrincipalContainer spam {
+  color: #524242;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.71px;
+}
+
+.box-detailPrincipalContainer spam {
+  color: #524242;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.cardsPrinciaplContainer {
+  border-radius: 50px 50px 0px 0px;
+  background: #dfeaff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardSecondaryContainer {
+  margin-top: 84px;
+  margin-bottom: 94px;
+}
+
+.cardSecondaryContainer .card {
+  display: flex;
+  width: 284.832px;
+  height: 359px;
+  padding: 49px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+
+  border-radius: 20px;
+  background: #fff;
+  margin-bottom: 34px;
+}
+
+.containerTextCard h2 {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  align-self: stretch;
+}
+
+.footer {
+  width: 65%;
+  margin: 80px auto;
+}
+
+.footer .naziContainer {
+  margin-bottom: 35px;
+}
+
+.footer .folowContainer {
+  margin-bottom: 38px;
+}
+
+.footer .folowContainer h3 {
+  color: #777;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 119.5%; /* 35.85px */
+  letter-spacing: -2.25px;
+}
+.footer .folowContainer .logosContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .textContainer {
+  margin-bottom: 30px;
+}
+
+.footer .textContainer span {
+  color: #867b7b;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 119.5%; /* 16.73px */
+  letter-spacing: 0.25px;
+}
+
+@media screen and (min-width: 426px) {
+  .hamburguerContainer {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .principalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .girlContainer {
+    display: flex;
+  }
+  .cardSecondaryContainer {
+    margin-top: 84px;
+    margin-bottom: 94px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cardSecondaryContainer .card {
+    display: flex;
+    width: 30%;
+    height: 359px;
+    padding: 49px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+    margin-bottom: 34px;
+  }
+
+  .footer {
+    width: 88%;
+    height: 179px;
+    margin: 80px auto;
+    position: relative;
+  }
+
+  .footer .naziContainer {
+    margin-bottom: 35px;
+    position: absolute;
+    left: 0px;
+  }
+
+  .footer .folowContainer {
+    margin-bottom: 38px;
+    width: 25%;
+    right: 0px;
+    position: absolute;
+  }
+  .footer .textContainer {
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 24%;
+  }
+}
