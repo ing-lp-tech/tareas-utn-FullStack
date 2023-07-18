@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .hamburguerContainer {
@@ -11,6 +12,8 @@
   justify-content: flex-end;
   margin: 31px 33px 31px 0;
 }
+
+/* Header */
 
 .header {
   display: none;
@@ -50,7 +53,7 @@
   margin-bottom: 49px;
 }
 .boxPrincipalContainer {
-  width: 22vw;
+  width: 40vw;
 }
 .girlContainer {
   display: none;
@@ -59,7 +62,7 @@
 .box-titlePrincipalContainer {
   margin-bottom: 15px;
 }
-.box-titlePrincipalContainer spam {
+.box-titlePrincipalContainer .titleCardTablet {
   color: #524242;
   font-family: Poppins;
   font-size: 38px;
@@ -69,6 +72,17 @@
   letter-spacing: -1.71px;
 }
 
+.titleCardLaptop {
+  display: none;
+  color: #524242;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 119.5%; /* 43.02px */
+  letter-spacing: -2.7px;
+}
 .box-detailPrincipalContainer spam {
   color: #524242;
   font-family: Poppins;
@@ -149,6 +163,11 @@
   justify-content: space-around;
 }
 
+.footer .folowContainer .logosContainer img {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
 .footer .textContainer {
   margin-bottom: 30px;
 }
@@ -162,6 +181,39 @@
   line-height: 119.5%; /* 16.73px */
   letter-spacing: 0.25px;
 }
+
+/* Navbar */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #ffc727;
+  color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: flex;
+}
+
+/* Mobile */
 
 @media screen and (min-width: 426px) {
   .hamburguerContainer {
@@ -220,7 +272,6 @@
     position: absolute;
     left: 0px;
   }
-
   .footer .folowContainer {
     margin-bottom: 38px;
     width: 25%;
@@ -232,5 +283,104 @@
     position: absolute;
     bottom: 0px;
     width: 24%;
+  }
+  .topnav {
+    display: none;
+  }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1023px) {
+  .principalContainer {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .boxPrincipalContainer {
+    width: 17vw;
+  }
+  .titleCardLaptop {
+    display: block;
+  }
+
+  .cardSecondaryContainer .card {
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin-bottom: 45px;
+  }
+
+  .containerTextCard h2 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    align-self: stretch;
+    margin-top: 20px;
+  }
+}
+
+/* nuevo */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 425px) {
+  .topnav {
+    background-color: #fff;
+  }
+
+  .topnav .active {
+    display: none;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 425px) {
+  .topnav.responsive {
+    position: relative;
+    margin-bottom: 30px;
+    border: 2px solid #ffc727;
+    border-radius: 20px;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: -7px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    color: #000;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
