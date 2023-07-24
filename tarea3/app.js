@@ -93,3 +93,11 @@ function closeModal() {
   console.log("close modal");
   imageContainer.innerHTML = "";
 }
+
+//function de wssp//
+const tuNumeroDeTelefono = "tu_numero_de_telefono";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappLink = document.getElementById("whatsappLink");
+  whatsappLink.href = `https://wa.me/${01162020911}`;
+});
