@@ -164,8 +164,8 @@
 }
 
 .footer .folowContainer .logosContainer img {
-  transform: translateX(0px);
-  animation: float 6s ease-out infinite;
+  transform: translateX(20px);
+  animation: float 2s ease-out infinite;
 }
 
 .footer .textContainer {
@@ -188,6 +188,8 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: sticky;
+  top: 0;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -370,6 +372,20 @@
     float: none;
     display: block;
     color: #000;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .principalContainer {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .boxPrincipalContainer {
+    width: 15vw;
   }
 }
 
