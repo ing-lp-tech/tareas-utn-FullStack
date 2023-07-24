@@ -99,5 +99,5 @@ const tuNumeroDeTelefono = "tu_numero_de_telefono";
 
 document.addEventListener("DOMContentLoaded", function () {
   const whatsappLink = document.getElementById("whatsappLink");
-  whatsappLink.href = `https://wa.me/${01162020911}`;
+  whatsappLink.href = `https://wa.me/${+5491162020911}`;
 });
