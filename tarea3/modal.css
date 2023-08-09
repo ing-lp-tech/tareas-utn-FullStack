@@ -167,7 +167,7 @@ span.psw {
   border-radius: 50%;
 }
 #imageContainer img {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   display: none; /* Inicialmente ocultamos la imagen */
 }
